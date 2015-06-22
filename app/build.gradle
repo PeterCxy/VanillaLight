@@ -5,7 +5,7 @@ android {
     buildToolsVersion "21.1.0"
 
     defaultConfig {
-        applicationId "com.mycompany.myapp"
+        applicationId "net.typeblog.v2ex"
         minSdkVersion 14
         targetSdkVersion 21
         versionCode 1
@@ -20,5 +20,7 @@ android {
 }
 
 dependencies {
+	compile 'org.jsoup:jsoup:1.8.2'
+	compile 'com.squareup.okhttp:okhttp:2.4.0'
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
