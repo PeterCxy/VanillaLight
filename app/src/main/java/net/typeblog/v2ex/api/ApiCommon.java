@@ -102,6 +102,13 @@ public class ApiCommon
 				topic.creator = strong.text();
 			}
 			
+			// Avatar
+			Elements imgs = item.getElementsByTag("img");
+			if (imgs == null || imgs.size() == 0) {
+				continue;
+			}
+			topic.creatorAvatar = "http:" + imgs.get(0).attr("src");
+			
 			// Last Replier & time
 			if (fades.size() > 1) {
 				Element secondFade = fades.get(1);

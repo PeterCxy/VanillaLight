@@ -7,6 +7,7 @@ public class TopicModel
 				nodeName,
 				nodeId,
 				creator,
+				creatorAvatar,
 				lastReplier,
 				time;
 	
@@ -17,6 +18,7 @@ public class TopicModel
 			"nodeName = " + nodeName + "; " +
 			"nodeId = " + nodeId + "; " +
 			"creator = " + creator + "; " +
+			"creatorAvatar = " + creatorAvatar + "; " +
 			"lastReplier = " + lastReplier + "; " +
 			"time = " + time;
 	}
