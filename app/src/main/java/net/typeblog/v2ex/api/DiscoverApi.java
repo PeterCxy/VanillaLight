@@ -22,7 +22,7 @@ public class DiscoverApi
 {
 	private static final String TAG = DiscoverApi.class.getSimpleName();
 	
-	public static List<TopicModel> getDiscoverTopocs(String tab) {
+	public static List<TopicModel> getDiscoverTopics(String tab) {
 		String html = HttpUtility.request(
 			DISCOVER,
 			new HttpParameters.Builder()

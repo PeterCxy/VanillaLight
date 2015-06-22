@@ -1,0 +1,73 @@
+<android.support.v7.widget.CardView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_margin="5dp"
+	app:cardCornerRadius="2dp"
+	app:cardElevation="3.6dp"
+	app:cardBackgroundColor="@color/white">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<de.hdodenhof.circleimageview.CircleImageView
+			android:id="@+id/topic_avatar"
+			android:layout_width="48sp"
+			android:layout_height="48sp"
+			android:layout_margin="8dp"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"/>
+
+		<TextView
+			android:id="@+id/topic_creator"
+			android:layout_width="match_parent"
+			android:layout_height="24sp"
+			android:layout_marginTop="8dp"
+			android:layout_marginLeft="8dp"
+			android:layout_marginRight="8dp"
+			android:layout_alignParentTop="true"
+			android:layout_toRightOf="@id/topic_avatar"
+			android:gravity="center_vertical"
+			android:singleLine="true"
+			android:textSize="16sp"
+			android:textColor="?attr/colorPrimary"/>
+
+		<TextView
+			android:id="@+id/topic_node"
+			android:layout_width="match_parent"
+			android:layout_height="24sp"
+			android:layout_marginLeft="16dp"
+			android:layout_marginRight="8dp"
+			android:layout_below="@id/topic_creator"
+			android:layout_toRightOf="@id/topic_avatar"
+			android:gravity="center_vertical"
+			android:singleLine="true"
+			android:textSize="15sp"
+			android:textColor="?attr/colorAccent"/>
+
+		<TextView
+			android:id="@+id/topic_title"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="8dp"
+			android:layout_below="@id/topic_avatar"
+			android:singleLine="false"
+			android:textSize="17sp"
+			android:textColor="@color/black"/>
+
+		<TextView
+			android:id="@+id/topic_extra"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="8dp"
+			android:layout_below="@id/topic_title"
+			android:singleLine="true"
+			android:textSize="14sp"
+			android:textColor="@color/black"
+			android:alpha="0.5"/>
+
+	</RelativeLayout>
+
+</android.support.v7.widget.CardView>
