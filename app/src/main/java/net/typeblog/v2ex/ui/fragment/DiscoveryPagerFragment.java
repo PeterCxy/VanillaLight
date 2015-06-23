@@ -13,13 +13,7 @@ public class DiscoveryPagerFragment extends BasePagerFragment
 		DiscoveryFragment.build("creative"),
 		DiscoveryFragment.build("tech"),
 		DiscoveryFragment.build("play"),
-		DiscoveryFragment.build("apple"),
-		DiscoveryFragment.build("jobs"),
-		DiscoveryFragment.build("deals"),
-		DiscoveryFragment.build("city"),
-		DiscoveryFragment.build("qna"),
 		DiscoveryFragment.build("hot"),
-		DiscoveryFragment.build("r2")
 	};
 
 	@Override

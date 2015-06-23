@@ -24,7 +24,7 @@ public abstract class BasePagerFragment extends Fragment
 		View v = inflater.inflate(R.layout.pager, container, false);
 		
 		mPager = $(v, R.id.pager);
-		mPager.setOffscreenPageLimit(0);
+		mPager.setOffscreenPageLimit(Integer.MAX_VALUE);
 		
 		return v;
 	}
