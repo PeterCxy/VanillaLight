@@ -15,6 +15,8 @@ public class ApiCommon
 {
 	private static final String TAG = ApiCommon.class.getSimpleName();
 	
+	private static final String LAST_REPLY = "最后回复";
+	
 	public static String parseTopicUrl(String url) {
 		return getStringBetween(url, "/t/", "#");
 	}
@@ -114,7 +116,11 @@ public class ApiCommon
 				Element secondFade = fades.get(1);
 				String text = secondFade.text();
 				topic.time = getStringBetween(text, null, "•").trim();
-				topic.lastReplier = getStringBetween(text, "最后回复", null).trim();
+				
+				if (text.indexOf(LAST_REPLY) > 0)
+					topic.lastReplier = getStringBetween(text, "最后回复", null).trim();
+				else
+					topic.lastReplier = "";
 			}
 
 			list.add(topic);
