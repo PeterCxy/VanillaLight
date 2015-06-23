@@ -6,5 +6,20 @@
 	<!-- Topics -->
 	<string name="node_format" formatted="false" translatable="false">〉 %s</string>
 	<string name="extra_format" formatted="falae" translatable="false">%s %s</string>
+	
+	<!-- Discovery -->
+	<string-array name="discover_titles">
+		<item>All</item>
+		<item>Creative</item>
+		<item>Tech</item>
+		<item>Play</item>
+		<item>Apple</item>
+		<item>Jobs</item>
+		<item>Deals</item>
+		<item>City</item>
+		<item>Q &amp; A</item>
+		<item>Hot</item>
+		<item>R2</item>
+	</string-array>
 
 </resources>

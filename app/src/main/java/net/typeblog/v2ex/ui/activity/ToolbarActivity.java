@@ -42,12 +42,12 @@ public abstract class ToolbarActivity extends AppCompatActivity
 		setSupportActionBar(mToolbar);
 	}
 	
-	protected void bindTabs(ViewPager pager) {
+	public void bindTabs(ViewPager pager) {
 		mTabs.setVisibility(View.VISIBLE);
 		mTabs.setupWithViewPager(pager);
 	}
 	
-	protected void unbindTabs() {
+	public void unbindTabs() {
 		mTabs.setupWithViewPager(null);
 		mTabs.setVisibility(View.GONE);
 	}
